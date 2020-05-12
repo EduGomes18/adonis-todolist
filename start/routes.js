@@ -17,5 +17,6 @@
 const Route = use("Route");
 
 Route.on("/").render("home");
-Route.get("/test", () => "Hello world!");
-Route.get("/task", "TaskController.index");
+Route.get("/tasks", "TaskController.index");
+Route.on("/add").render("add");
+Route.post("/add", "TaskController.store");
