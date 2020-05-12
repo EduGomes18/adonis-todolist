@@ -8,7 +8,7 @@
 @endif
 <div class="list-group">
   @each(item in tasks)
-  <button type="button" class="list-group-item list-group-item-action">{{item.title}}</button>
+<a href="/task/{{item.id}}" class="list-group-item list-group-item-action">{{item.title}}</a>
   @endeach
 </div>
 @endsection
